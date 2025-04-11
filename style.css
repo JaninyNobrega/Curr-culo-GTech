@@ -1,0 +1,218 @@
+body{
+    background-color: #f1dede;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header{
+    background-color: white;
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+
+header img{
+    border-radius: 50%;
+}
+
+.principal{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.direita{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: -780px;        
+}
+
+.cabecalho{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 24px; 
+    color: black;
+    transition: color 0.3s;
+}
+
+.social-links a:hover{
+    color: #f585c4;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;    
+    margin-top: 20px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+section:hover {
+    transform: scale(1.02); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.button-container button{
+    margin: 0 10px;
+ 
+}
+
+button {
+    background-color: white; 
+    color: #333; 
+    padding: 12px 24px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animação suave */
+}
+
+button:hover {
+    background-color: #f1b3b3; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    background-color:  #f1b3b3; 
+    transform: scale(0.95); 
+}
+h1{
+    font-size: 24px;
+    margin: 0;
+}
+section p, section h2{
+    font-size: 18px;  
+    font-size: 16px;
+    margin: 20px 0;
+    align-items: center;
+    text-align:left;
+}
+
+.modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+}
+
+.modal-content {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Ajusta o deslocamento para centralizar */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .principal {
+        flex-direction: column; /* Alinha os elementos em coluna */
+    }
+
+    .esquerda, .direita {
+        width: 100%; /* Faz as divs ocuparem toda a largura */
+        margin-top: 20px; /* Adiciona espaçamento entre elas */
+    }
+
+    .direita {
+        margin-top: 0; /* Remove margens negativas */
+    }
+
+    header {
+        padding: 10px; /* Reduz o padding do header */
+    }
+
+    .button-container {
+        flex-direction: column; /* Alinha os botões em coluna */
+    }
+
+    .button-container button {
+        margin: 10px 0; /* Adiciona espaçamento entre os botões */
+    }
+}
+
+/* Estilos para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduz o padding geral */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    section {
+        padding: 10px; /* Reduz o padding das seções */
+    }
+
+    .social-links a {
+        font-size: 20px; /* Reduz o tamanho dos ícones sociais */
+    }
+
+    button {
+        font-size: 14px; /* Reduz o tamanho dos botões */
+        padding: 10px 20px; /* Ajusta o padding dos botões */
+    }
+}
