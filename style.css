@@ -5,6 +5,7 @@ body{
     padding: 20px;  
     justify-content: center;
     align-items: center;
+    height: 100%;
     
 }
 
@@ -15,8 +16,7 @@ header{
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    margin-top: 20px;
-    
+    margin-top: 20px;   
 }
 
 header img{
@@ -28,6 +28,7 @@ header img{
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex: 1;
 }
 
 .esquerda{
@@ -41,7 +42,7 @@ header img{
     align-items: center;
     padding: 20px;
     flex-direction: column;
-    margin-top: -780px;        
+    margin-top: -770px;        
 }
 
 .cabecalho{
@@ -166,30 +167,55 @@ section p, section h2{
     text-decoration: none;
 }
 
+footer{
+    text-align: center;
+    margin-top: auto;
+    padding: 5px; 
+    margin-bottom: 0px;  
+}
+
+.whatsapp-icon {
+    position: fixed; /* Fixa o ícone na tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da lateral direita */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.whatsapp-icon img {
+    border-radius: 50%; /* Deixa o ícone circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao ícone */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); 
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
 @media (max-width: 768px) {
     .principal {
-        flex-direction: column; /* Alinha os elementos em coluna */
+        flex-direction: column; 
     }
 
     .esquerda, .direita {
-        width: 100%; /* Faz as divs ocuparem toda a largura */
-        margin-top: 20px; /* Adiciona espaçamento entre elas */
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .direita {
-        margin-top: 0; /* Remove margens negativas */
+        margin-top: 0; 
     }
 
     header {
-        padding: 10px; /* Reduz o padding do header */
+        padding: 10px; 
     }
 
     .button-container {
-        flex-direction: column; /* Alinha os botões em coluna */
+        flex-direction: column; 
     }
 
     .button-container button {
-        margin: 10px 0; /* Adiciona espaçamento entre os botões */
+        margin: 10px 0;
     }
 }
 
